@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Fandom characters</h1>
+
+<div id="fandom_characters">
+  <% @fandom_characters.each do |fandom_character| %>
+    <%= render fandom_character %>
+    <p>
+      <%= link_to "Show this fandom character", fandom_character %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New fandom character", new_fandom_character_path %>

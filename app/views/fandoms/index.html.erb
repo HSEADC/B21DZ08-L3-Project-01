@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Fandoms</h1>
+
+<div id="fandoms">
+  <% @fandoms.each do |fandom| %>
+    <%= link_to fandom, class: 'fandomCard' do %>
+      <%= render fandom %>
+    <% end %>
+  <% end %>
+</div>
+
+<%= link_to "New fandom", new_fandom_path %>

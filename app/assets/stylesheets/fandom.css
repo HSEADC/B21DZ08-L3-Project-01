@@ -1,0 +1,8 @@
+.fandomCard {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    text-decoration: none;
+    color: black;
+}

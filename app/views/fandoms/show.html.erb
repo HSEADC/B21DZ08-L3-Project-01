@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @fandom %>
+<hr>
+<%= render @fandom.fandom_character %>
+
+<div>
+  <%= link_to "Edit this fandom", edit_fandom_path(@fandom) %> |
+  <%= link_to "Back to fandoms", fandoms_path %>
+
+  <%= button_to "Destroy this fandom", @fandom, method: :delete %>
+</div>

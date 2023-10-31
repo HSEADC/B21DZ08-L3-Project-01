@@ -1,39 +1,10 @@
-.Card {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    box-sizing: border-box;
-    width: 600px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: #fafafa;
-    background-color: #111111;
-}
-
-.Card h2 {
-    margin: 0px 0px 10px 0px;
-}
-
 .FanImg {
     border-radius: 14px;
 }
 
-.Button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #232323;
-    color: #fafafa;
-    border: none;
-    border-radius: 40px;
-    padding: 10px 24px;
-    width: fit-content;
-    font-size: 14px;
-}
-
-.ButtonsDirection {
-    display: flex;
-    column-gap: 10px;
+.About_Banner {
+    display: block;
+    width: 100%;
+    height: 35.938vw;
+    background: no-repeat center/100% url('/assets/About_Banner.png');
 }

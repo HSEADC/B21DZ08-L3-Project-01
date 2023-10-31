@@ -1,4 +1,27 @@
-.M_Navlink {
+.O_Navbar {
     display: flex;
-    column-gap: 100px;
+    margin: 20px 0px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.A_Logotype {
+    display: block;
+    width: 3.854vw;
+    height: 1.563vw;
+    background: no-repeat center/100% url('/assets/Logotype.png');
+}
+
+.M_Navlink {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.A_Blackpath {
+    display: block;
+    width: 3.854vw;
+    height: 1.563vw;
 }

@@ -65,6 +65,6 @@ class FandomsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def fandom_params
-      params.require(:fandom).permit(:title, :author_id, :category_id, :character_id)
+      params.require(:fandom).permit(:title, :author_id, :category_id, :character_id, :description)
     end
 end

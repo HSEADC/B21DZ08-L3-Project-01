@@ -16,8 +16,6 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-.DS_Store
-Thumbs.db
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
@@ -37,3 +35,4 @@ Thumbs.db
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+.DS_Store

@@ -2,12 +2,20 @@
 
 <h1>Fandoms</h1>
 
+<%= link_to "New fandom", new_fandom_path %>
+
 <div id="fandoms">
   <% @fandoms.each do |fandom| %>
-    <%= link_to fandom, class: 'fandomCard' do %>
+    <%= link_to fandom, class: 'Card' do %>
       <%= render fandom %>
+      <p>
+        <strong>Автор:</strong>
+        <%= render fandom.author%>
+      </p>
+      <p>
+        <strong>Описание:</strong>
+        <%= fandom.description %>
+      </p>
     <% end %>
   <% end %>
 </div>
-
-<%= link_to "New fandom", new_fandom_path %>

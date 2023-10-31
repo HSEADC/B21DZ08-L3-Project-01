@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_11_080333) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_31_045151) do
   create_table "authors", force: :cascade do |t|
     t.string "name"
     t.integer "fandom_id"
@@ -20,6 +20,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_11_080333) do
 
   create_table "categories", force: :cascade do |t|
     t.string "title"
+    t.integer "fandom_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.text "body"
     t.integer "fandom_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -39,6 +46,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_11_080333) do
     t.integer "character_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "description"
+    t.string "fandom_image"
   end
 
 end

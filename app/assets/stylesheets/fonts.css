@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'TT Interphases Educational';
+    src: url("/assets/TTInterphasesEducationalRegular.ttf") format('truetype'),
+      url("/assets/TTInterphasesEducationalRegular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  @font-face {
+    font-family: 'TT Interphases Educational';
+    src: url("/assets/TTInterphasesEducationalMedium.ttf") format('truetype'),
+      url("/assets/TTInterphasesEducationalMedium.ttf") format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

@@ -1,8 +1,21 @@
-.fandomCard {
-    display: block;
+.Card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    box-sizing: border-box;
+    width: 600px;
     margin: 20px;
     padding: 20px;
-    border: 1px solid lightgrey;
+    border-radius: 20px;
     text-decoration: none;
-    color: black;
+    color: #fafafa;
+    background-color: #111111;
+}
+
+.Card h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+.FanImg {
+    border-radius: 14px;
 }

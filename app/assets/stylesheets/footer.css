@@ -1,0 +1,37 @@
+.O_Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+    width: calc(100% - 40px);
+    height: 550px;
+    background-color: #E2E5EE;
+    border-radius: 20px;
+}
+
+.O_Footer h2 {
+    margin: 0;
+    font-size: 64px;
+}
+
+.O_Footer h3 {
+    margin: 0;
+    display: block;
+    padding: 13px 62px 23px;
+    font-size: 48px;
+    border: 1px solid #070707;
+    border-radius: 40px;
+    background-color: #E2E5EE;
+}
+
+.M_Credits {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 200px;
+    font-size: 24px;
+}
+
+p, a {
+    margin: 0;
+}

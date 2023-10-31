@@ -2,13 +2,12 @@
 
 <h1>Authors</h1>
 
+<%= link_to "New author", new_author_path %>
+
 <div id="authors">
   <% @authors.each do |author| %>
-    <%= render author %>
-    <p>
-      <%= link_to "Show this author", author %>
-    </p>
+    <%= link_to author, class: 'Card' do %>
+      <%= render author %>
+    <% end %>
   <% end %>
 </div>
-
-<%= link_to "New author", new_author_path %>

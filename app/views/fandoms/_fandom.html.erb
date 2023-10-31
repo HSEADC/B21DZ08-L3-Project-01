@@ -1,8 +1,4 @@
 <div id="<%= dom_id fandom %>">
-  <h3><%= fandom.title %></h3>
-  <p>
-    <%= render fandom.author %>
-    <%= render fandom.category %>
-  </p>
-
+  <h2><%= fandom.title %></h2>
 </div>
+<%= image_tag fandom.fandom_image.url, class: 'FanImg' %>

@@ -19,3 +19,21 @@
 .FanImg {
     border-radius: 14px;
 }
+
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    color: #fafafa;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 24px;
+    width: fit-content;
+    font-size: 14px;
+}
+
+.ButtonsDirection {
+    display: flex;
+    column-gap: 10px;
+}

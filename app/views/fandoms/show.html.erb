@@ -1,22 +1,24 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @fandom %>
-<p>
-  <strong>Автор:</strong>
-  <%= render @fandom.author%>
-</p>
-<p>
-  <strong>Описание:</strong>
-  <%= @fandom.description %>
-</p>
-<hr>
+<div class="Card">
+  <%= render @fandom %>
+  <p>
+    <strong>Автор:</strong>
+    <%= render @fandom.author%>
+  </p>
+  <p>
+    <strong>Описание:</strong>
+    <%= @fandom.description %>
+  </p>
+</div>
 
 <h3>Комментарии</h3>
-<%= render @fandom.comment%>
+<%= link_to "New comment", new_fandom_comment_path(@fandom), class: 'Button'  %>
+<%= render @fandom.comment, fandom: @fandom %>
 
-<div>
-  <%= link_to "Edit this fandom", edit_fandom_path(@fandom) %> |
-  <%= link_to "Back to fandoms", fandoms_path %>
+<div class="ButtonsDirection">
+  <%= link_to "Edit this fandom", edit_fandom_path(@fandom), class: 'Button'  %> 
+  <%= link_to "Back to fandoms", fandoms_path, class: 'Button'  %>
 
-  <%= button_to "Destroy this fandom", @fandom, method: :delete %>
+  <%= button_to "Destroy this fandom", @fandom, method: :delete, class: 'Button'  %>
 </div>

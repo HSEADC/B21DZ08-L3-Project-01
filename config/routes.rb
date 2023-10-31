@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :comments
   resources :fandoms do
     resources :fandom_characters
+    resources :comments
   end
   resources :authors do
     resources :fandoms

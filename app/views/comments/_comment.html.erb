@@ -1,5 +1,11 @@
 <div id="<%= dom_id comment %>">
-  <p>
-    <%= comment.body %>
-  </p>
+  <div class="Card">
+    <p>
+      <%= comment.body %>
+    </p>
+    <div class="ButtonsDirection">
+      <%= link_to "Edit this comment", edit_fandom_comment_path(fandom, comment), class: 'Button'  %>
+      <%= button_to "Destroy this comment", [fandom, comment], method: :delete, class: 'Button' %>
+    </div>
+  </div>
 </div>

@@ -1,4 +1,4 @@
 <div id="<%= dom_id fandom %>">
   <h2><%= fandom.title %></h2>
 </div>
-<%= image_tag fandom.fandom_image.url, class: 'FanImg' %>
+<%= image_tag fandom.fandom_image.url, class: 'FanImg' if fandom.fandom_image.url %>

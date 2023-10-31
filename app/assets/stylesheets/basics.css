@@ -10,4 +10,10 @@ body {
 
 a {
     color: #fafafa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.M_Navlink a:hover {
+    color: #FAFA00;
 }
